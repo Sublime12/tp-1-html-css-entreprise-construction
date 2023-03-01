@@ -41,6 +41,10 @@ a {
     font-size: large;
 }
 
+.text-2xl {
+    font-size: 1.5em;
+}
+
 .text-3xl {
     font-size: 2em;
 }
@@ -59,6 +63,10 @@ a {
     font-weight: bold;
 }
 
+.font-normal {
+    font-weight: 450;
+}
+
 .text-center {
     text-align: center;
 }
@@ -74,6 +82,10 @@ a {
 
 .pl-10 {
     padding-left: 20px;
+}
+
+.pl-5 {
+    padding-left: 10px;
 }
 
 .pl-50 {
@@ -94,6 +106,10 @@ a {
 
 .pt-25 {
     padding-top: 50px;
+}
+
+.pt-15 {
+    padding-top: 30px;
 }
 
 .pt-10 {
@@ -119,9 +135,19 @@ a {
     padding-bottom: 220px;
 }
 
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .px-20 {
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.px-10 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* For text very small */
@@ -137,8 +163,20 @@ a {
     width: 800px;
 }
 
+.w-350 {
+    width: 350px;
+}
+
+.h-290 {
+    height: 290px;
+}
+
 .border {
     border: solid black 1px;
+}
+
+.border-t-yellow-7\.5 {
+    border-top: solid #f7da17 15px;
 }
 
 .flex {
@@ -157,6 +195,10 @@ a {
     align-items: end;
 }
 
+.items-center {
+    align-items: center;
+}
+
 .text-gray {
     color: #505050;
 }
@@ -164,6 +206,10 @@ a {
 .space-x-10 > * {
     margin-left: 20px;
     /* margin-right: 20px; */
+}
+
+.space-x-15 > * {
+    margin-left: 30px;
 }
 
 .underline {
@@ -223,4 +269,8 @@ a {
 
 .rounded-sm {
     border-radius: 5px;
+}
+
+.list-style-trait > li {
+    list-style: disc;
 }
