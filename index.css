@@ -16,6 +16,7 @@
     font-family: 'font-2' ,Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Reset all styles of html elements */
 li {
     list-style: none;
 }
@@ -25,8 +26,18 @@ a {
     text-decoration: none;
 }
 
+figure {
+    margin: 0px;
+}
+
+/* End reset all styles of html elements */
+
 .bg-yellow {
     background-color: #f7da17;
+}
+
+.bg-black {
+    background-color: #000000;
 }
 
 .bg-white {
@@ -75,22 +86,7 @@ a {
     font-size: small;
 }
 
-.py-15 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
-.pl-10 {
-    padding-left: 20px;
-}
-
-.pl-5 {
-    padding-left: 10px;
-}
-
-.pl-50 {
-    padding-left: 100px;
-}
 
 .italic {
     font-style: italic;
@@ -118,6 +114,11 @@ a {
 
 .pt-5 {
     padding-top: 10px;
+}
+
+.py-15 {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .py-7 {
@@ -150,6 +151,22 @@ a {
     padding-right: 20px;
 }
 
+.pb-200 {
+    padding-bottom: 200px;
+}
+
+.pl-10 {
+    padding-left: 20px;
+}
+
+.pl-5 {
+    padding-left: 10px;
+}
+
+.pl-50 {
+    padding-left: 100px;
+}
+
 /* For text very small */
 .text-ssm {
     font-size: 0.75em;
@@ -163,8 +180,33 @@ a {
     width: 800px;
 }
 
+.w-360 {
+    width: 360px;
+}
+
+.h-auto {
+    height: auto;
+}
+
 .w-350 {
     width: 350px;
+}
+
+.w-25 {
+    width: 25px;
+}
+
+
+.w-3\/5 {
+    width: 60%;
+}
+
+.w-2\/5 {
+    width: 40%;
+}
+
+.h-410 {
+    height: 410px;
 }
 
 .h-290 {
@@ -183,6 +225,10 @@ a {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -198,6 +244,7 @@ a {
 .items-center {
     align-items: center;
 }
+
 
 .text-gray {
     color: #505050;
@@ -273,4 +320,12 @@ a {
 
 .list-style-trait > li {
     list-style: disc;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-12 {
+    top: 24px;
 }
