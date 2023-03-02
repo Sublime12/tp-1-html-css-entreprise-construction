@@ -9,11 +9,11 @@
 }
 
 .font-family-1 {
-    font-family: 'font-1' ,Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'font-1', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .font-family-2 {
-    font-family: 'font-2' ,Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'font-2', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Reset all styles of html elements */
@@ -30,10 +30,24 @@ figure {
     margin: 0px;
 }
 
+body {
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    font-size: medium;
+    font-weight: normal;
+}
+
 /* End reset all styles of html elements */
 
 .bg-yellow {
     background-color: #f7da17;
+}
+
+.bg-orange-yellow {
+    background-color: #ffc107;
 }
 
 .bg-black {
@@ -59,8 +73,6 @@ figure {
 .text-3xl {
     font-size: 2em;
 }
-
-
 
 .text-5xl {
     font-size: 4em;
@@ -98,6 +110,10 @@ figure {
 
 .p-10 {
     padding: 20px;
+}
+
+.p-20 {
+    padding: 40px;
 }
 
 .pt-25 {
@@ -151,8 +167,16 @@ figure {
     padding-right: 20px;
 }
 
+.pb-33 {
+    padding-bottom: 33px;
+}
+
 .pb-200 {
     padding-bottom: 200px;
+}
+
+.pl-20 {
+    padding-left: 40px;
 }
 
 .pl-10 {
@@ -221,6 +245,18 @@ figure {
     border-top: solid #f7da17 15px;
 }
 
+.border-t-light-gray-1 {
+    border-top: solid #CCCCCC 1px;
+}
+
+.border-r-light-gray-1 {
+    border-right: solid #CCCCCC 1px;
+}
+
+.border-b-light-gray-1 {
+    border-bottom: solid #CCCCCC 1px;
+}
+
 .flex {
     display: flex;
 }
@@ -250,12 +286,12 @@ figure {
     color: #505050;
 }
 
-.space-x-10 > * {
+.space-x-10>* {
     margin-left: 20px;
     /* margin-right: 20px; */
 }
 
-.space-x-15 > * {
+.space-x-15>* {
     margin-left: 30px;
 }
 
@@ -289,12 +325,23 @@ figure {
     line-height: 2.2rem;
 }
 
+.hover\:border-orange-yellow:hover {
+    border: #ffc107 solid 2px;
+}
+.hover\:border-gray:hover {
+    border: #505050 solid 2px;
+}
+
 .hover\:bg-black:hover {
     background-color: #000000;
 }
 
 .hover\:text-white:hover {
     color: #ffffff;
+}
+
+.hover\:text-gray:hover {
+    color: #505050;
 }
 
 .hover\:border-yellow:hover {
@@ -318,7 +365,7 @@ figure {
     border-radius: 5px;
 }
 
-.list-style-trait > li {
+.list-style-trait>li {
     list-style: disc;
 }
 
