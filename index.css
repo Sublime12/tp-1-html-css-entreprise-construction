@@ -89,6 +89,10 @@ input, input:focus, select, textarea, button {
     font-size: 2em;
 }
 
+.text-4xl {
+    font-size: 3em;
+}
+
 .text-5xl {
     font-size: 4em;
 }
@@ -120,8 +124,6 @@ input, input:focus, select, textarea, button {
 .text-sm {
     font-size: small;
 }
-
-
 
 .italic {
     font-style: italic;
@@ -161,6 +163,10 @@ input, input:focus, select, textarea, button {
 
 .pt-30 {
     padding-top: 60px;
+}
+
+.py-25 {
+    padding-top: 50px;
 }
 
 .py-15 {
@@ -277,12 +283,12 @@ input, input:focus, select, textarea, button {
     width: 520px;
 }
 
-.w-360 {
-    width: 360px;
+.w-480 {
+    width: 480px;
 }
 
-.h-auto {
-    height: auto;
+.w-360 {
+    width: 360px;
 }
 
 .w-540 {
@@ -318,6 +324,14 @@ input, input:focus, select, textarea, button {
     width: 40%;
 }
 
+.h-auto {
+    height: auto;
+}
+
+.h-500 {
+    height: 500px;
+}
+
 .h-410 {
     height: 410px;
 }
@@ -350,6 +364,10 @@ input, input:focus, select, textarea, button {
     border-bottom: solid #CCCCCC 1px;
 }
 
+.float {
+    float: left;
+}
+
 .flex {
     display: flex;
 }
@@ -368,6 +386,10 @@ input, input:focus, select, textarea, button {
 
 .align-end {
     align-items: end;
+}
+
+items-baseline {
+    align-items: baseline;
 }
 
 .items-center {
@@ -423,6 +445,11 @@ input, input:focus, select, textarea, button {
 .bg-image-service {
     background-image: url('./assets/images/services-bg.jpg');
     background-repeat: repeat-x;
+    /* background-size: contain; */
+}
+
+.bg-position-5\/4 {
+    background-position-y: 125%;
 }
 
 .bg-image-contact {
