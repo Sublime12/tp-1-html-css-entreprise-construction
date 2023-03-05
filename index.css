@@ -21,8 +21,12 @@ li {
     list-style: none;
 }
 
+ul {
+    all: unset;
+}
+
 a {
-    color: #000000;
+    color: unset;
     text-decoration: none;
 }
 
@@ -40,6 +44,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+input, input:focus, select, textarea, button {
+    border: none;
+    width: 260px;
+}
+
+
+
 /* End reset all styles of html elements */
 
 .bg-yellow {
@@ -56,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-white {
     background-color: #ffffff;
+}
+
+.bg-dark-gray {
+    background-color: #151515;
 }
 
 .text-normal {
@@ -78,6 +93,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4em;
 }
 
+.placeholder\:text-2xl::placeholder {
+    font-size: 1.5em;
+}
+
 .font-bolder {
     font-weight: bolder;
 }
@@ -88,6 +107,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-normal {
     font-weight: 450;
+}
+
+.placeholder\:font-semilight::placeholder {
+    font-weight: lighter;
 }
 
 .text-center {
@@ -116,6 +139,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px;
 }
 
+.p-30 {
+    padding: 60px;
+}
+
 .pt-25 {
     padding-top: 50px;
 }
@@ -132,9 +159,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 10px;
 }
 
+.pt-30 {
+    padding-top: 60px;
+}
+
 .py-15 {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.py-10 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .py-7 {
@@ -152,7 +188,17 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 220px;
 }
 
-.py-40 {
+.py-50 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.py-30 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.py-20 {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -171,9 +217,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 33px;
 }
 
+.pb-20 {
+    padding-bottom: 40px;
+}
+
 .pb-200 {
     padding-bottom: 200px;
 }
+
+
 
 .pl-20 {
     padding-left: 40px;
@@ -191,17 +243,38 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 100px;
 }
 
+
 /* For text very small */
 .text-ssm {
     font-size: 0.75em;
+}
+
+.text-sm {
+    font-size: 0.85em;
 }
 
 .w-container {
     width: 1200px;
 }
 
+.w-full {
+    width: 100%;
+}
+
+.w-1020 {
+    width: 990px;
+}
+
 .w-850 {
     width: 800px;
+}
+
+.w-260 {
+    width: 260px;
+}
+
+.w-520 {
+    width: 520px;
 }
 
 .w-360 {
@@ -210,6 +283,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-auto {
     height: auto;
+}
+
+.w-540 {
+    width: 665px;
+}
+
+.w-430 {
+    width: 430px;
 }
 
 .w-350 {
@@ -225,6 +306,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 60%;
 }
 
+.w-2\/3 {
+    width: 66.666%;
+}
+
+.flex-2\/3 {
+    width: 60.66%;
+}
+
 .w-2\/5 {
     width: 40%;
 }
@@ -235,6 +324,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .h-290 {
     height: 290px;
+}
+
+.h-200 {
+    height: 200px;
 }
 
 .border {
@@ -270,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .justify-between {
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .align-end {
@@ -286,15 +379,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #505050;
 }
 
-.space-x-10>* {
-    margin-left: 20px;
+.space-x-10 > * {
+    margin-right: 20px;
     /* margin-right: 20px; */
 }
 
-.space-x-15>* {
-    margin-left: 30px;
+.space-x-15 > * {
+    margin-right: 30px;
 }
 
+.space-x-30 > * {
+    margin-right: 60px;
+}
+
+.space-y-18 > * {
+    margin-bottom: 40px;
+}
+
+.space-y-15 > * {
+    margin-bottom: 30px;
+}
+
+.space-y-10 > * {
+    margin-bottom: 20px;
+}
+
+.space-y-8 > * {
+    margin-bottom: 14px;
+}
 .underline {
     text-decoration: underline;
 }
@@ -313,12 +425,26 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: repeat-x;
 }
 
+.bg-image-contact {
+    background-image: url('./assets/images/contact-bg-img.jpg');
+    /* background-repeat: space; */
+    background-size: cover;
+}
+
 .text-white {
     color: whitesmoke;
 }
 
 .text-yellow {
     color: #f7da17;
+}
+
+.text-dark-gray {
+    color: #505050;
+}
+
+.text-dark {
+    color: #000000;
 }
 
 .leading-3 {
