@@ -38,13 +38,22 @@ body {
     margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px;
-    font-size: medium;
-    font-weight: normal;
+    font-size: unset;
+    font-weight: unset;
 }
 
-input, input:focus, select, textarea, button {
+input,
+input:focus,
+select,
+textarea,
+button {
     border: none;
     width: 260px;
 }
@@ -227,9 +236,14 @@ input, input:focus, select, textarea, button {
     padding-bottom: 40px;
 }
 
+.pb-70 {
+    padding-bottom: 140px;
+}
+
 .pb-200 {
     padding-bottom: 200px;
 }
+
 
 
 
@@ -303,6 +317,10 @@ input, input:focus, select, textarea, button {
     width: 350px;
 }
 
+.w-320 {
+    width: 320px;
+}
+
 .w-25 {
     width: 25px;
 }
@@ -336,6 +354,10 @@ input, input:focus, select, textarea, button {
     height: 410px;
 }
 
+.h-320 {
+    height: 320px;
+}
+
 .h-290 {
     height: 290px;
 }
@@ -364,8 +386,12 @@ input, input:focus, select, textarea, button {
     border-bottom: solid #CCCCCC 1px;
 }
 
-.float {
+.float-left {
     float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 .flex {
@@ -401,34 +427,35 @@ items-baseline {
     color: #505050;
 }
 
-.space-x-10 > * {
+.space-x-10>* {
     margin-right: 20px;
     /* margin-right: 20px; */
 }
 
-.space-x-15 > * {
+.space-x-15>* {
     margin-right: 30px;
 }
 
-.space-x-30 > * {
+.space-x-30>* {
     margin-right: 60px;
 }
 
-.space-y-18 > * {
+.space-y-18>* {
     margin-bottom: 40px;
 }
 
-.space-y-15 > * {
+.space-y-15>* {
     margin-bottom: 30px;
 }
 
-.space-y-10 > * {
+.space-y-10>* {
     margin-bottom: 20px;
 }
 
-.space-y-8 > * {
+.space-y-8>* {
     margin-bottom: 14px;
 }
+
 .underline {
     text-decoration: underline;
 }
@@ -481,6 +508,7 @@ items-baseline {
 .hover\:border-orange-yellow:hover {
     border: #ffc107 solid 2px;
 }
+
 .hover\:border-gray:hover {
     border: #505050 solid 2px;
 }
