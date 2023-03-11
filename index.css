@@ -25,6 +25,10 @@ ul {
     all: unset;
 }
 
+ol {
+    all: unset;
+}
+
 a {
     color: unset;
     text-decoration: none;
@@ -58,7 +62,9 @@ button {
     width: 260px;
 }
 
-
+th {
+    text-align: inherit;
+}
 
 /* End reset all styles of html elements */
 
@@ -154,26 +160,6 @@ button {
     padding: 60px;
 }
 
-.pt-25 {
-    padding-top: 50px;
-}
-
-.pt-15 {
-    padding-top: 30px;
-}
-
-.pt-10 {
-    padding-top: 20px;
-}
-
-.pt-5 {
-    padding-top: 10px;
-}
-
-.pt-30 {
-    padding-top: 60px;
-}
-
 .py-25 {
     padding-top: 50px;
 }
@@ -187,6 +173,12 @@ button {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.py-5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 .py-7 {
     padding-top: 14px;
@@ -226,6 +218,27 @@ button {
 .px-10 {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+.pt-25 {
+    padding-top: 50px;
+}
+
+.pt-15 {
+    padding-top: 30px;
+}
+
+.pt-10 {
+    padding-top: 20px;
+}
+
+.pt-5 {
+    padding-top: 10px;
+}
+
+.pt-30 {
+    padding-top: 60px;
 }
 
 .pb-33 {
@@ -370,6 +383,10 @@ button {
     border: solid black 1px;
 }
 
+.border-gray-2 {
+    border: solid #CCCCCC 2px;
+}
+
 .border-t-yellow-7\.5 {
     border-top: solid #f7da17 15px;
 }
@@ -380,6 +397,10 @@ button {
 
 .border-r-light-gray-1 {
     border-right: solid #CCCCCC 1px;
+}
+
+.border-l-light-gray-1 {
+    border-left: solid #CCCCCC 1px;
 }
 
 .border-b-light-gray-1 {
@@ -546,8 +567,12 @@ items-baseline {
     border-radius: 5px;
 }
 
-.list-style-trait>li {
+.list-style-trait > li {
     list-style: disc;
+}
+
+.list-style-decimal > li {
+    list-style: decimal;
 }
 
 .relative {
@@ -557,3 +582,10 @@ items-baseline {
 .top-12 {
     top: 24px;
 }
+
+/* Table styles */
+.border-collapse {
+    border-collapse: collapse;
+}
+
+/* End table style */
