@@ -80,64 +80,88 @@
                 </div>
             </div>
 
-            <form method="post" action="#" class="space-y-15">
-                <div class="flex space-x-30">
-                    <input 
-                        class="border-gray-2 text-2xl placeholder:font-semilight w-260 py-7 pl-20" 
-                        type="text" 
-                        placeholder="Nom"
-                        name="name" 
-                        required
-                    >
+            <form method="post" action="#" class="space-y-15 text-dark-gray text-2xl font-bold">
+                <div class="flex justify-between space-x-30">
+                    <div class="flex flex-col w-full">
+                        <label for="name">Nom : </label>
+                        <input
+                            class="border-gray-2 placeholder:font-semilight w-full py-7 pl-20"
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                        >
+                    </div>
 
-                    <input 
-                        class="border-gray-2 text-2xl placeholder:font-semilight w-260 py-7 pl-20" 
-                        type="email"
-                        placeholder="Adresse mail" 
-                        name="email" 
-                        required
-                    >
+                    <div class="flex flex-col w-full">
+                        <label for="lastname">Prenom : </label>
+                        <input
+                            class="border-gray-2 placeholder:font-semilight w-full py-7 pl-20"
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            required
+                        >
+                    </div>
 
-                    <input 
-                        class="border-gray-2 text-2xl placeholder:font-semilight w-260 py-7 pl-20" 
-                        type="number"
-                        placeholder="Numero de telephone" 
-                        name="phone" 
-                        required
-                    >
-
+                    
                 </div>
+                <div class="flex justify-between space-x-30">
+                    <div class="flex flex-col w-full">
+                        <label for="lastname">Email : </label>
+                        <input
+                            class="border-gray-2 placeholder:font-semilight w-540 py-7 pl-20"
+                            type="text"
+                            name="email"
+                            id="email"
+                            required
+                        >
+                    </div>
 
+                    <div class="flex flex-col w-full">
+                        <label for="enterprise">Entreprise : </label>
+                        <input
+                            class="border-gray-2 placeholder:font-semilight w-full py-7 pl-20"
+                            type="text"
+                            name="enterprise"
+                            id="enterprise"
+                            required
+                        >
+                    </div>
+                </div>
+                
                 <div class="flex space-x-30">
                     <!-- <input class="placeholder:text-2xl placeholder:font-semilight w-540 py-10 pl-20" type="text"  placeholder="Nom" name="name" required> -->
-                    <select 
-                        name="serviceId" 
-                        class="border-gray-2 text-gray text-2xl placeholder:font-semilight w-540 py-7 pl-20"
-                    >
-                        <option class="text-xl font-semilight py-10 text-gray" value="no-value" disabled selected>
-                            Choisir le service</option>
-                        <option class="text-xl font-semilight py-10 " value="0">Plan architecture</option>
-                        <option class="text-xl font-semilight py-10 " value="1">Construction Maison</option>
-                        <option class="text-xl font-semilight py-10 " value="2">Construction Batiment</option>
-                        <option class="text-xl font-semilight py-10 " value="3">Construction Immeuble</option>
-                    </select>
+                    <div class="flex flex-col">
+                        <label for="service">Service a probleme : </label>
+                        <select
+                            name="service"
+                            id="service"
+                            class="border-gray-2 text-gray placeholder:font-semilight w-540 py-7 pl-20"
+                        >
+                            <option class="text-xl font-semilight py-10 text-gray" value="no-value" disabled selected>
+                                Choisir le service</option>
+                            <option class="text-xl font-semilight py-10 " value="0">Plan architecture</option>
+                            <option class="text-xl font-semilight py-10 " value="1">Construction Maison</option>
+                            <option class="text-xl font-semilight py-10 " value="2">Construction Batiment</option>
+                            <option class="text-xl font-semilight py-10 " value="3">Construction Immeuble</option>
+                        </select>
+                    </div>
 
-                    <input 
-                        class="border-gray-2 text-2xl placeholder:font-semilight w-260 py-7 pl-20" 
-                        type="text"
-                        placeholder="Entreprise" 
-                        name="email" 
-                        required
-                    >
 
                 </div>
 
-                <div>
-                    <textarea 
-                        placeholder="Specification detaillee" 
-                        name="description" 
-                        class="border-gray-2 w-1020 h-200 p-10 text-2xl"
-                    ></textarea>
+                <div class="space-x-30">
+
+                    <div class="flex flex-col">
+                        <label for="description">Description : </label>
+                        <textarea
+                            placeholder="Specification detaillee"
+                            name="description"
+                            id="description"
+                            class="border-gray-2 w-full h-200 p-10 text-2xl"
+                        ></textarea>
+                    </div>
                 </div>
 
                 <button 

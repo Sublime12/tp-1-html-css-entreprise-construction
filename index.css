@@ -54,7 +54,7 @@ h6 {
 }
 
 input,
-input:focus,
+/* input:focus, */
 select,
 textarea,
 button {
