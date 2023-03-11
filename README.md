@@ -7,7 +7,7 @@ Le project consiste a construire un site web statique sur un projet d'entreprene
 Ce projet represente le site web d'une entreprise de construction et de consultation
 
 Je me suis inspire d'un template qui se trouve dans le dossier 
-`.inspirationTemplate`, (Juste inspire, aucun code n'a ete copie)
+`.templateInspiration`, (Juste inspire, aucun code n'a ete copie)
 
 Le site contient la partie `assets` qui va contenir nos `Images` et differents `Fonts` 
 recuperes sur internet.
@@ -95,4 +95,5 @@ etre sure que notre style etait correct, probleme qui peut etre regle facilement
 les classes css representent le style a appliquer, on aura juste a ajouter ou enleve 
 des classes pour modifier un style
 
-Ceci a aussi quelques desavantages, nos elements dans le html auront tendance a avoir beaucoup de classes ce qui nuire a la lisibilite du html
+Ceci a aussi quelques desavantages, nos elements dans le html auront tendance a avoir 
+beaucoup de classes ce qui nuire a la lisibilite du html
