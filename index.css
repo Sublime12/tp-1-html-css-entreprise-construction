@@ -60,6 +60,7 @@ textarea,
 button {
     border: none;
     width: 260px;
+    font-size: inherit;
 }
 
 th {
